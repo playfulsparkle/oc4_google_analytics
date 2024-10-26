@@ -1,0 +1,64 @@
+{{ header }}
+{{ column_left }}
+<div id="content">
+	<div class="page-header">
+		<div class="container-fluid">
+			<div class="float-end">
+				<button type="submit" form="form-analytics" data-bs-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa-solid fa-save"></i></button>
+				<a href="{{ back }}" data-bs-toggle="tooltip" title="{{ button_back }}" class="btn btn-light"><i class="fa-solid fa-reply"></i></a>
+			</div>
+			<h1>{{ heading_title }}</h1>
+			<ol class="breadcrumb">
+				{% for breadcrumb in breadcrumbs %}
+				<li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+				{% endfor %}
+			</ol>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="card">
+			<div class="card-header"><i class="fa-solid fa-pencil"></i> {{ text_edit }}</div>
+			<div class="card-body">
+				<form id="form-analytics" action="{{ action }}" method="post" data-oc-toggle="ajax">
+
+					<ul class="nav nav-tabs">
+						<li class="nav-item"><a href="#tab-general" data-bs-toggle="tab" class="nav-link active">{{ tab_general }}</a></li>
+						<li class="nav-item"><a href="#tab-support" data-bs-toggle="tab" class="nav-link">{{ tab_help_and_support }}</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="tab-general" class="tab-pane active">
+
+							<div class="row mb-3">
+								<label class="col-sm-2 col-form-label" for="input-status">{{ entry_status }}</label>
+								<div class="col-sm-10">
+									<div class="form-check form-switch form-switch-lg">
+										<input type="hidden" name="analytics_ps_google_analytics_status" value="0" />
+										<input type="checkbox" name="analytics_ps_google_analytics_status" value="1" class="form-check-input" {% if analytics_ps_google_analytics_status %} checked{% endif %} id="input-status" />
+									</div>
+								</div>
+							</div>
+
+							<div class="row mb-3 required">
+								<label for="input-gtm-id" class="col-sm-2 col-form-label">{{ entry_google_tag_id }}</label>
+								<div class="col-sm-10">
+									<input type="text" name="analytics_ps_google_analytics_google_tag_id" value="{{ analytics_ps_google_analytics_google_tag_id | default('') }}" placeholder="{{ entry_google_tag_id }}" id="input-gtm-id" class="form-control" />
+									<div id="error-input-gtm-id" class="invalid-feedback"></div>
+									<div class="form-text">{{ help_google_tag_id_locate }}</div>
+								</div>
+							</div>
+
+						</div>
+						<div id="tab-support" class="tab-pane">
+							<p>{{ text_help_intro }}</p>
+						</div>
+
+					</div>
+
+					<input type="hidden" name="store_id" value="{{ store_id }}">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+{{ footer }}

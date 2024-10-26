@@ -1,0 +1,26 @@
+{
+  "name": "ps_google_analytics",
+  "version": "1.0.0",
+  "description": "Playful Sparkle - Google Analytics (module) for OpenCart 4",
+  "main": "index.js",
+  "scripts": {
+    "compress": "node compress.js"
+  },
+  "keywords": [
+    "opencart",
+    "oc",
+    "playfulsparkle",
+    "google",
+    "google analytics"
+  ],
+  "author": "zsoltoroszlany82 <zsolt.oroszlany@playfulsparkle.com>",
+  "license": "GPL",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "fs": "^0.0.1-security"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playfulsparkle/oc4_google_analytics.git"
+  }
+}
