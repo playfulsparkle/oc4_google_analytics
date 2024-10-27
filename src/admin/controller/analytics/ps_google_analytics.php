@@ -1,13 +1,36 @@
 <?php
 namespace Opencart\Admin\Controller\Extension\PsGoogleAnalytics\Analytics;
 /**
- * Class PsGoogleAnalytics
+ * Playful Sparkle - Google Analytics (GA4) Extension for OpenCart 4
+ *
+ * This extension allows users to integrate Google Analytics 4 (GA4) tracking into their OpenCart store
+ * without any coding skills. The extension provides a user-friendly interface for setting up and managing
+ * Google Analytics tracking.
  *
  * @package Opencart\Admin\Controller\Extension\PsGoogleAnalytics\Analytics
+ * @subpackage  Google Analytics (GA4)
+ * @version     1.0.0
+ * @link        https://github.com/playfulsparkle/oc4_google_analytics
+ * @email       support@playfulsparkle.com
  */
 class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
 {
     /**
+     * @var string The support email address.
+     */
+    const EXTENSION_EMAIL = 'support@playfulsparkle.com';
+
+    /**
+     * @var string The documentation URL for the extension.
+     */
+    const EXTENSION_DOC = 'https://github.com/playfulsparkle/oc4_google_analytics';
+
+    /**
+     * Displays the main interface for the Google Analytics settings.
+     *
+     * This method loads the necessary language files, sets the page title,
+     * prepares the breadcrumb navigation, and gathers data for the view.
+     *
      * @return void
      */
     public function index(): void
@@ -42,6 +65,8 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
         $data['analytics_ps_google_analytics_status'] = (bool) $this->config->get('analytics_ps_google_analytics_status');
         $data['analytics_ps_google_analytics_google_tag_id'] = $this->config->get('analytics_ps_google_analytics_google_tag_id');
 
+        $data['text_contact'] = sprintf($this->language->get('text_contact'), self::EXTENSION_EMAIL, self::EXTENSION_EMAIL, self::EXTENSION_DOC);
+
         $data['header'] = $this->load->controller('common/header');
         $data['column_left'] = $this->load->controller('common/column_left');
         $data['footer'] = $this->load->controller('common/footer');
@@ -49,6 +74,14 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
         $this->response->setOutput($this->load->view('extension/ps_google_analytics/analytics/ps_google_analytics', $data));
     }
 
+    /**
+     * Saves the Google Analytics settings.
+     *
+     * This method processes the submitted data, checks for permissions, validates the Google Tag ID,
+     * and saves the settings if everything is correct.
+     *
+     * @return void
+     */
     public function save(): void
     {
         $this->load->language('extension/ps_google_analytics/analytics/ps_google_analytics');
@@ -79,11 +112,27 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
         $this->response->setOutput(json_encode($json));
     }
 
+    /**
+     * Handles the installation of the extension.
+     *
+     * This method can be implemented to handle any necessary setup
+     * during the installation process.
+     *
+     * @return void
+     */
     public function install(): void
     {
 
     }
 
+    /**
+     * Handles the uninstallation of the extension.
+     *
+     * This method can be implemented to handle any necessary cleanup
+     * during the uninstallation process.
+     *
+     * @return void
+     */
     public function uninstall(): void
     {
 
