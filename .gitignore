@@ -3,7 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-*.zip
+# General
+[Dd]ist/*.zip
+package-lock.json
 
 # User-specific files
 *.rsuser
