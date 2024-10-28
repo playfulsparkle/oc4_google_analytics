@@ -35,4 +35,4 @@ Download the latest **Playful Sparkle - Google Analytics (GA4)** release from th
 
 ## Support & Feedback
 
-For support or any inquiries regarding the extension, feel free to open an issue on this repository or reach out via email at [%s](mailto:%s).
+For support or any inquiries regarding the extension, feel free to open an issue on this repository or reach out via email at [support@playfulsparkle.com](mailto:support@playfulsparkle.com).
