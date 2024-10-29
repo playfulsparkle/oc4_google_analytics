@@ -1,7 +1,7 @@
 {
   "name": "oc4_google_analytics",
   "version": "1.0.0",
-  "description": "Playful Sparkle - Google Analytics (module) for OpenCart 4",
+  "description": "Playful Sparkle - Google Analytics for OpenCart 4",
   "main": "index.js",
   "scripts": {
     "compress": "node compress.js"
