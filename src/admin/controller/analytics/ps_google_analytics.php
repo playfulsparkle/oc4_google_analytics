@@ -10,7 +10,7 @@ namespace Opencart\Admin\Controller\Extension\PsGoogleAnalytics\Analytics;
  * @package Opencart\Admin\Controller\Extension\PsGoogleAnalytics\Analytics
  * @subpackage  Google Analytics (GA4)
  * @version     1.0.0
- * @link        https://github.com/playfulsparkle/oc4_google_analytics
+ * @link        https://github.com/playfulsparkle/oc4_google_analytics.git
  * @email       support@playfulsparkle.com
  */
 class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
@@ -23,7 +23,7 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
     /**
      * @var string The documentation URL for the extension.
      */
-    const EXTENSION_DOC = 'https://github.com/playfulsparkle/oc4_google_analytics';
+    const EXTENSION_DOC = 'https://github.com/playfulsparkle/oc4_google_analytics.git';
 
     /**
      * Displays the main interface for the Google Analytics settings.
