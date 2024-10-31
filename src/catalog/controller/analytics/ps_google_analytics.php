@@ -1,9 +1,9 @@
 <?php
 namespace Opencart\Catalog\Controller\Extension\PsGoogleAnalytics\Analytics;
 /**
- * Playful Sparkle - Google Analytics (GA4) Extension for OpenCart 4
+ * Playful Sparkle - Google Analytics (GA4)
  *
- * This extension allows users to integrate Google Analytics 4 (GA4) tracking into their OpenCart store
+ * This extension allows users to integrate Google Analytics (GA4) tracking into their OpenCart store
  * without any coding skills. The extension provides a user-friendly interface for setting up and managing
  * Google Analytics tracking.
  *
