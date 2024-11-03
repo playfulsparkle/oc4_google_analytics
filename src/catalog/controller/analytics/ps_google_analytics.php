@@ -41,7 +41,7 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
             function gtag() { dataLayer.push(arguments); }
 
             gtag('js', new Date());
-            gtag('config', '{$google_tag_id}');
+            gtag('config', '{$google_tag_id}', {'cookie_flags': 'SameSite=None;Secure'});
         </script>
         HTML;
     }
