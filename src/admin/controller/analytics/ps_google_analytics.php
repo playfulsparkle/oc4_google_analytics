@@ -53,13 +53,13 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
 
         $data['breadcrumbs'][] = [
             'text' => $this->language->get('heading_title'),
-            'href' => $this->url->link('extension/analytics/ps_google_analytics', 'user_token=' . $this->session->data['user_token'], true),
+            'href' => $this->url->link('extension/analytics/ps_google_analytics', 'user_token=' . $this->session->data['user_token'] . '&store_id=' . $this->request->get['store_id'], true),
         ];
 
 
         $separator = version_compare(VERSION, '4.0.2.0', '>=') ? '.' : '|';
 
-        $data['action'] = $this->url->link('extension/ps_google_analytics/analytics/ps_google_analytics' . $separator . 'save', 'user_token=' . $this->session->data['user_token']);
+        $data['action'] = $this->url->link('extension/ps_google_analytics/analytics/ps_google_analytics' . $separator . 'save', 'user_token=' . $this->session->data['user_token'] . '&store_id=' . $this->request->get['store_id']);
         $data['back'] = $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=analytics');
 
         $data['analytics_ps_google_analytics_status'] = (bool) $this->config->get('analytics_ps_google_analytics_status');
