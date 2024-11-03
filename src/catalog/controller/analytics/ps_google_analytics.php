@@ -38,8 +38,7 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
         <script async src="https://www.googletagmanager.com/gtag/js?id={$google_tag_id}"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-
-            function gtag(){ dataLayer.push(arguments); }
+            function gtag() { dataLayer.push(arguments); }
 
             gtag('js', new Date());
             gtag('config', '{$google_tag_id}');
