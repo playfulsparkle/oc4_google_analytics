@@ -94,9 +94,9 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
 
         if (!$json) {
             if (!isset($this->request->post['analytics_ps_google_analytics_google_tag_id'])) {
-                $json['error']['input-gtm-id'] = $this->language->get('error_google_tag_id');
+                $json['error']['input-google-tag-id'] = $this->language->get('error_google_tag_id');
             } elseif (preg_match('/^G-[A-Z0-9]+$/', $this->request->post['analytics_ps_google_analytics_google_tag_id']) !== 1) {
-                $json['error']['input-gtm-id'] = $this->language->get('error_google_tag_id_invalid');
+                $json['error']['input-google-tag-id'] = $this->language->get('error_google_tag_id_invalid');
             }
         }
 
