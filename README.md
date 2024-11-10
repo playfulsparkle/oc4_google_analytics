@@ -9,6 +9,20 @@ Google Analytics (GA4) is used to track and analyze how people interact with web
 
 The benefits of GA4 include a more complete view of the customer journey, as it combines data from both websites and apps into one place. Its advanced machine learning models can automatically detect trends, predict future behaviors, and uncover hidden insights, helping businesses optimize marketing strategies. Additionally, GA4’s event-based tracking is more flexible than past versions, allowing for better customization and a clearer understanding of user engagement.
 
+## Features
+
+- **Multilingual Support**: The extension is available in the following languages:
+  - Čeština (cs-cz)
+  - Deutsch (de-de)
+  - English (GB) (en-gb)
+  - English (US) (en-us)
+  - Español (es-es)
+  - Français (fr-fr)
+  - Magyar (hu-hu)
+  - Italiano (it-it)
+  - Русский (ru-ru)
+  - Slovenčina (sk-sk)
+
 ## Installation Instructions
 
 ### 1. Download the Extension
