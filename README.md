@@ -1,64 +1,57 @@
 # Playful Sparkle - Google Analytics for OpenCart 4
 
-The ***Playful Sparkle - Google Analytics (GA4) Extension*** for OpenCart 4.x is a powerful tool designed to integrate Google Analytics seamlessly into OpenCart websites, even for users without coding skills. This extension simplifies the process of tracking website performance and customer interactions, providing insights into user behaviors, traffic sources, and shopping trends directly within GA4. With features like easy installation, event tracking, and real-time data synchronization, this extension empowers users to make data-driven decisions, improve their online store’s performance, and enhance customer experience—all without needing technical expertise.
+**Playful Sparkle - Google Analytics** extension for OpenCart 4.x+ is an easy-to-use solution for integrating **Google Analytics (GA4)** into your OpenCart store, even if you have no coding experience. This extension allows you to simply enter your Google Tag ID through the user-friendly interface, and it automatically inserts the tracking code on your website, making data collection effortless.
 
-### What is Google Analytics (GA4)?
-Google Analytics (GA4) is the newest version of Google’s powerful tool for tracking and understanding website and app activity. Unlike previous versions, GA4 uses machine learning to provide insights into customer behavior across different devices and platforms. It’s designed to help businesses see what’s working, make data-driven decisions, and improve the user experience easily.
-
-Google Analytics (GA4) is used to track and analyze how people interact with websites and apps, giving businesses insights into their customers’ actions and preferences. It allows you to see details like where visitors come from, what pages they view, and how long they stay. GA4 can also track specific events, such as when users click a button, complete a form, or make a purchase.
-
-The benefits of GA4 include a more complete view of the customer journey, as it combines data from both websites and apps into one place. Its advanced machine learning models can automatically detect trends, predict future behaviors, and uncover hidden insights, helping businesses optimize marketing strategies. Additionally, GA4’s event-based tracking is more flexible than past versions, allowing for better customization and a clearer understanding of user engagement.
-
-## Features
-
-- **Multilingual Support**: The extension is available in the following languages:
-  - Čeština (cs-cz)
-  - Deutsch (de-de)
-  - English (GB) (en-gb)
-  - English (US) (en-us)
-  - Español (es-es)
-  - Français (fr-fr)
-  - Magyar (hu-hu)
-  - Italiano (it-it)
-  - Русский (ru-ru)
-  - Slovenčina (sk-sk)
-
-## Installation Instructions
-
-### 1. Download the Extension
-Download the latest **Playful Sparkle - Google Analytics (GA4)** release from this repository.
-
-### 2. Upload the Extension Files
-1. Log in to your OpenCart admin panel.
-2. Go to `Extensions > Installer`.
-3. Click the `Upload` button and upload the `ps_google_analytics.ocmod.zip` file.
-
-### 3. Install the Extension
-4. Once uploaded, find the **Playful Sparkle - Google Analytics (GA4)** extension and click the `Install` button.
-5. Navigate to `Extensions` and select `Analytics` from the dropdown.
-6. Locate the **Playful Sparkle - Google Analytics (GA4)** in the module list and click the green `Install` button.
-
-### 4. Configure the Extension
-1. After installation, go to the `Extensions` page, ensuring `Analytics` is selected.
-2. Click `Edit` next to the **Playful Sparkle - Google Analytics (GA4)** extension.
-3. Enter your Google tag ID (G-XXXXXXXXXX) in the provided field.
-4. Enable the module by setting the status to `Enabled`.
-5. Save the configuration.
+**Google Analytics (GA4)** is the latest version of Google’s powerful analytics tool, designed to track and analyze customer interactions across your website. By implementing GA4, you can gain insights into user behavior, traffic sources, and conversion metrics to optimize your online store and enhance your marketing strategies.
 
 ---
 
-## Support & Feedback
+## Features
 
-For support or any inquiries regarding the extension, feel free to open an issue on this repository or reach out via email at [support@playfulsparkle.com](mailto:support@playfulsparkle.com).
+- **No-Code Integration**: Easily integrate Google Analytics by entering your Google Tag ID, with no coding required.
+- **Compatibility**: Integrates smoothly with OpenCart 4.x+, supporting a range of online store setups.
+- **Multi-store Support**: Supports multi-store setups by default, making it easy to integrate across multiple OpenCart stores.
+- **Multilingual Support**: Ready for international use with languages including Čeština (cs-cz), Deutsch (de-de), English (GB) (en-gb), English (US) (en-us), Español (es-es), Français (fr-fr), Magyar (hu-hu), Italiano (it-it), Русский (ru-ru), and Slovenčina (sk-sk).
+
+---
+
+## Installation Instructions
+
+### Installation Instructions for OpenCart 3.x+
+
+1. Download the latest version from this repository.
+2. Log in to your OpenCart admin panel.
+3. Navigate to `Extensions > Installer`.
+4. Click the `Upload` button and upload the `ps_google_analytics.ocmod.zip` file.
+5. Navigate to `Extensions > Extensions` and select `Analytics` from the `Choose the extension type` dropdown list.
+6. Locate the extension in the `Analytics` list and click the `Install` button.
+7. Click the `Edit` button, configure the extension parameters, and click the `Save` button to save your settings.
+
+### Installation Instructions for OpenCart 4.x+
+
+1. Download the latest version from this repository.
+2. Log in to your OpenCart admin panel.
+3. Navigate to `Extensions > Installer`.
+4. Click the `Upload` button and upload the `ps_google_analytics.ocmod.zip` file.
+5. Locate the extension in the `Installed Extensions` list and click the `Install` button.
+6. Navigate to `Extensions > Extensions` and select `Analytics` from the `Choose the extension type` dropdown list.
+7. Locate the extension in the `Analytics` list and click the `Install` button.
+8. Click the `Edit` button, configure the extension parameters, and click the `Save` button to save your settings.
+
+---
+
+## Support & Inquiries
+
+For assistance or inquiries related to this extension, please open an issue on this repository or contact us via email at [support@playfulsparkle.com](mailto:support@playfulsparkle.com).
 
 ---
 
 ## License
 
-This project is licensed under the GPL-3.0 license. See the [LICENSE](./LICENSE) file for more information.
+This project is distributed under the GPL-3.0 license. Please refer to the [LICENSE](./LICENSE) file for further details.
 
 ---
 
 ## Contributing
 
-We welcome contributions! If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
+We encourage contributions from the community. To contribute, please fork the repository and submit a pull request with your proposed changes.
