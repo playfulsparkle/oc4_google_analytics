@@ -1,6 +1,6 @@
 # Playful Sparkle - Google Analytics for OpenCart 4
 
-**Playful Sparkle - Google Analytics** extension for OpenCart 4.x+ is an easy-to-use solution for integrating **Google Analytics (GA4)** into your OpenCart store, even if you have no coding experience. This extension allows you to simply enter your Google Tag ID through the user-friendly interface, and it automatically inserts the tracking code on your website, making data collection effortless.
+**Playful Sparkle - Google Analytics** extension for OpenCart 4.x+ is an easy-to-use solution for integrating **Google Analytics (GA4)** into your OpenCart store, even if you have no coding experience. This extension allows you to simply enter your **Google Tag ID** through the user-friendly interface, and it automatically inserts the tracking code on your website, making data collection effortless.
 
 **Google Analytics (GA4)** is the latest version of Google’s powerful analytics tool, designed to track and analyze customer interactions across your website. By implementing GA4, you can gain insights into user behavior, traffic sources, and conversion metrics to optimize your online store and enhance your marketing strategies.
 
