@@ -24,6 +24,7 @@ $_['tab_help_and_support']          = 'Pomoc a podpora';
 // Entry
 $_['entry_status']                  = 'Stav';
 $_['entry_google_tag_id']           = 'Google Tag ID';
+$_['entry_debug_mode']              = 'Ladění Global Site Tag';
 
 // Help
 $_['help_google_tag_id_locate']     = 'Chcete-li najít svůj Google Tag ID, přihlaste se do svého <a href="https://analytics.google.com" target="_blank" rel="external noopener noreferrer">účtu Analytics</a>. Přejděte do sekce Admin, vyberte vlastnost, kterou chcete sledovat, a najděte svůj Google Tag ID. Začíná písmenem "G-" následovaným jedinečnou kombinací písmen a čísel, například "G-XXXXXXXXXX." <a href="https://support.google.com/analytics/answer/9539598?HL=cs" target="_blank" rel="external noopener noreferrer">Podrobnější pokyny naleznete zde</a>.';

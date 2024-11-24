@@ -24,6 +24,7 @@ $_['tab_help_and_support']          = 'Aide &amp; Support';
 // Entry
 $_['entry_status']                  = 'Statut';
 $_['entry_google_tag_id']           = 'ID de balise Google';
+$_['entry_debug_mode']              = 'Débogage de Global Site Tag';
 
 // Help
 $_['help_google_tag_id_locate']     = 'Pour trouver votre ID de balise Google, connectez-vous à votre <a href="https://analytics.google.com" target="_blank" rel="external noopener noreferrer">compte Analytics</a>. Allez dans la section Administration, sélectionnez la propriété que vous souhaitez suivre, et trouvez votre ID de balise Google. Il commencera par "G-" suivi d\'une combinaison unique de lettres et de chiffres, comme "G-XXXXXXXXXX." <a href="https://support.google.com/analytics/answer/9539598?hl=fr" target="_blank" rel="external noopener noreferrer">Instructions détaillées ici</a>.';

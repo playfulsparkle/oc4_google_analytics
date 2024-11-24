@@ -24,6 +24,7 @@ $_['tab_help_and_support']          = 'Help &amp; Support';
 // Entry
 $_['entry_status']                  = 'Status';
 $_['entry_google_tag_id']           = 'Google Tag ID';
+$_['entry_debug_mode']              = 'Debug Global Site Tag';
 
 // Help
 $_['help_google_tag_id_locate']     = 'To find your Google Tag ID, log in to your <a href="https://analytics.google.com" target="_blank" rel="external noopener noreferrer">Analytics account</a>. Go to the Admin section, select the property you want to track, and find your Google Tag ID. It will start with "G-" followed by a unique combination of letters and numbers, like "G-XXXXXXXXXX." <a href="https://support.google.com/analytics/answer/9539598?hl=en" target="_blank" rel="external noopener noreferrer">More detailed instructions here</a>.';

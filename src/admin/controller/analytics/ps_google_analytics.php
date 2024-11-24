@@ -63,6 +63,7 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
         $data['back'] = $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=analytics');
 
         $data['analytics_ps_google_analytics_status'] = (bool) $this->config->get('analytics_ps_google_analytics_status');
+        $data['analytics_ps_google_analytics_debug_mode'] = (bool) $this->config->get('analytics_ps_google_analytics_debug_mode');
         $data['analytics_ps_google_analytics_google_tag_id'] = $this->config->get('analytics_ps_google_analytics_google_tag_id');
 
         $data['text_contact'] = sprintf($this->language->get('text_contact'), self::EXTENSION_EMAIL, self::EXTENSION_EMAIL, self::EXTENSION_DOC);
@@ -93,9 +94,9 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
         }
 
         if (!$json) {
-            if (!isset($this->request->post['analytics_ps_google_analytics_google_tag_id'])) {
+            if (empty($this->request->post['analytics_ps_google_analytics_google_tag_id'])) {
                 $json['error']['input-google-tag-id'] = $this->language->get('error_google_tag_id');
-            } elseif (preg_match('/^G-[A-Z0-9]+$/', $this->request->post['analytics_ps_google_analytics_google_tag_id']) !== 1) {
+            } elseif (preg_match('/^G-[A-Z0-9]{10}$/', $this->request->post['analytics_ps_google_analytics_google_tag_id']) !== 1) {
                 $json['error']['input-google-tag-id'] = $this->language->get('error_google_tag_id_invalid');
             }
         }
@@ -110,31 +111,5 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
 
         $this->response->addHeader('Content-Type: application/json');
         $this->response->setOutput(json_encode($json));
-    }
-
-    /**
-     * Handles the installation of the extension.
-     *
-     * This method can be implemented to handle any necessary setup
-     * during the installation process.
-     *
-     * @return void
-     */
-    public function install(): void
-    {
-
-    }
-
-    /**
-     * Handles the uninstallation of the extension.
-     *
-     * This method can be implemented to handle any necessary cleanup
-     * during the uninstallation process.
-     *
-     * @return void
-     */
-    public function uninstall(): void
-    {
-
     }
 }

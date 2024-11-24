@@ -24,6 +24,7 @@ $_['tab_help_and_support']          = 'Помощь и поддержка';
 // Entry
 $_['entry_status']                  = 'Статус';
 $_['entry_google_tag_id']           = 'Google Tag ID';
+$_['entry_debug_mode']              = 'Отладка Global Site Tag';
 
 // Help
 $_['help_google_tag_id_locate']     = 'Чтобы найти ваш Google Tag ID, войдите в свой <a href="https://analytics.google.com" target="_blank" rel="external noopener noreferrer">аккаунт Analytics</a>. Перейдите в раздел "Администратор", выберите собственность, которую вы хотите отслеживать, и найдите свой Google Tag ID. Он начинается с "G-" и за ним следует уникальное сочетание букв и цифр, например, "G-XXXXXXXXXX". <a href="https://support.google.com/analytics/answer/9539598?hl=en" target="_blank" rel="external noopener noreferrer">Более подробные инструкции здесь</a>.';

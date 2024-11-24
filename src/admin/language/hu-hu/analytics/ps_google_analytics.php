@@ -24,6 +24,7 @@ $_['tab_help_and_support']          = 'Segítség és támogatás';
 // Entry
 $_['entry_status']                  = 'Állapot';
 $_['entry_google_tag_id']           = 'Google Tag ID';
+$_['entry_debug_mode']              = 'Global Site Tag hibakeresése';
 
 // Help
 $_['help_google_tag_id_locate']     = 'A Google Tag ID megtalálásához jelentkezzen be a <a href="https://analytics.google.com" target="_blank" rel="external noopener noreferrer">Google Analytics fiókjába</a>. Lépjen az Admin szakaszra, válassza ki a nyomkövetni kívánt tulajdont, és keresse meg a Google Tag ID-ját. A Google Tag ID "G-" kezdetű, amelyet egyedi betűk és számok követnek, például "G-XXXXXXXXXX." <a href="https://support.google.com/analytics/answer/9539598?hl=hu" target="_blank" rel="external noopener noreferrer">További részletes utasítások itt</a>.';
