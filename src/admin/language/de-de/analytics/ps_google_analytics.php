@@ -27,7 +27,7 @@ $_['entry_google_tag_id']           = 'Google Tag-ID';
 $_['entry_debug_mode']              = 'Debug Global Site Tag';
 
 // Help
-$_['help_google_tag_id_locate']     = 'Um Ihre Google Tag-ID zu finden, melden Sie sich bei Ihrem <a href="https://analytics.google.com" target="_blank" rel="external noopener noreferrer">Analytics-Konto</a> an. Gehen Sie zum Admin-Bereich, wählen Sie die Property aus, die Sie verfolgen möchten, und finden Sie Ihre Google Tag-ID. Sie beginnt mit "G-" gefolgt von einer einzigartigen Kombination aus Buchstaben und Zahlen, wie "G-XXXXXXXXXX." <a href="https://support.google.com/analytics/answer/9539598?hl=de" target="_blank" rel="external noopener noreferrer">Hier finden Sie detailliertere Anweisungen</a>.';
+$_['help_google_tag_id_locate']     = 'Um Ihre Google Tag-ID zu finden, melden Sie sich bei Ihrem <a href="https://analytics.google.com" target="_blank" rel="external noopener noreferrer">Google Analytics-Konto</a> an. Gehen Sie zum Admin-Bereich, wählen Sie die zu verfolgende Property aus und suchen Sie nach Ihrer Google Tag-ID. Diese beginnt mit "G-" und wird von einer einzigartigen Kombination aus Buchstaben und Zahlen gefolgt, z. B. "G-XXXXXXXXXX". <a href="https://support.google.com/analytics/answer/9539598?hl=de" target="_blank" rel="external noopener noreferrer">Detaillierte Anweisungen hier</a>.';
 
 // Error
 $_['error_permission']              = 'Warnung: Sie haben keine Berechtigung, die Einstellungen von Google Analytics zu ändern!';

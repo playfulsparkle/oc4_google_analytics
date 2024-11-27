@@ -27,7 +27,7 @@ $_['entry_google_tag_id']           = 'Google Tag ID';
 $_['entry_debug_mode']              = 'Ladění Global Site Tag';
 
 // Help
-$_['help_google_tag_id_locate']     = 'Chcete-li najít svůj Google Tag ID, přihlaste se do svého <a href="https://analytics.google.com" target="_blank" rel="external noopener noreferrer">účtu Analytics</a>. Přejděte do sekce Admin, vyberte vlastnost, kterou chcete sledovat, a najděte svůj Google Tag ID. Začíná písmenem "G-" následovaným jedinečnou kombinací písmen a čísel, například "G-XXXXXXXXXX." <a href="https://support.google.com/analytics/answer/9539598?HL=cs" target="_blank" rel="external noopener noreferrer">Podrobnější pokyny naleznete zde</a>.';
+$_['help_google_tag_id_locate']     = 'Chcete-li najít své Google Tag ID, přihlaste se do svého <a href="https://analytics.google.com" target="_blank" rel="external noopener noreferrer">účtu Analytics</a>. Přejděte do sekce Správce (Admin), vyberte vlastnost, kterou chcete sledovat, a najděte své Google Tag ID. Začne písmenem "G-" následovaným unikátní kombinací písmen a čísel, například "G-XXXXXXXXXX". <a href="https://support.google.com/analytics/answer/9539598?hl=cs" target="_blank" rel="external noopener noreferrer">Podrobnější návod naleznete zde</a>.';
 
 // Error
 $_['error_permission']              = 'Upozornění: Nemáte oprávnění měnit nastavení Google Analytics!';
