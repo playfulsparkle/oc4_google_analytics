@@ -96,13 +96,15 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
         if (!$json) {
             if (empty($this->request->post['analytics_ps_google_analytics_google_tag_id'])) {
                 $json['error']['input-google-tag-id'] = $this->language->get('error_google_tag_id');
-            } elseif (preg_match('/^G-[A-Z0-9]{10}$/', $this->request->post['analytics_ps_google_analytics_google_tag_id']) !== 1) {
+            } elseif (preg_match('/^G-[A-Z0-9]{10}$/', strtoupper($this->request->post['analytics_ps_google_analytics_google_tag_id'])) !== 1) {
                 $json['error']['input-google-tag-id'] = $this->language->get('error_google_tag_id_invalid');
             }
         }
 
         if (!$json) {
             $this->load->model('setting/setting');
+
+            $this->request->post['analytics_ps_google_analytics_google_tag_id'] = strtoupper($this->request->post['analytics_ps_google_analytics_google_tag_id']);
 
             $this->model_setting_setting->editSetting('analytics_ps_google_analytics', $this->request->post);
 

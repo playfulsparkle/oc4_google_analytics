@@ -3,7 +3,7 @@
     "description": "Easily integrate Google Analytics (GA4) into your store with a simple interface and no coding required for effortless data tracking.",
     "code": "ps_google_analytics",
     "license": "GPL",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Playful Sparkle",
     "link": "https://github.com/playfulsparkle/oc4_google_analytics.git"
   }
