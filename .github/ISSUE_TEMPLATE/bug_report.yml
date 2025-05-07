@@ -5,6 +5,11 @@ labels: []
 assignees:
   - zsoltoroszlany82
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the details below to help us understand and fix the issue.
+
   - type: textarea
     attributes:
       label: Describe the Bug
