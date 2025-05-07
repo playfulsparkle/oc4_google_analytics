@@ -1,0 +1,88 @@
+name: 🐞 Bug Report
+description: Create a report to help us improve Google Analytics extension for OpenCart
+title: "Bug Report Title"
+labels: []
+assignees:
+  - zsoltoroszlany82
+body:
+  - type: textarea
+    attributes:
+      label: Describe the Bug
+      description: Clearly describe what is going wrong.
+      placeholder: e.g. Error appears when saving extension settings.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Perform action '...'
+        4. Observe error or unexpected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: What should have happened instead?
+      placeholder: The product should have saved without any error.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Error Logs or Messages
+      description: Paste relevant logs, stack traces, or error messages here.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Screenshots or Video
+      description: If available, upload screenshots or a video showing the problem.
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: Extension Version
+      description: What version of the extension are you using?
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: OpenCart Version
+      description: Which version of OpenCart are you using?
+      options:
+        - 4.1.0.3
+        - 4.1.0.2
+        - 4.1.0.1
+        - 4.1.0.0
+        - 4.0.2.3
+        - 4.0.2.2
+        - 4.0.2.1
+        - 4.0.2.0
+        - 4.0.1.1
+        - 4.0.1.0
+        - 4.0.0.0
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Environment Details
+      description: Web server, PHP/MySQL version, browser, theme, and other relevant details.
+      placeholder: |
+        - Web Server: Apache 2.4
+        - PHP Version: 7.4
+        - MySQL Version: 5.7
+        - Browser: Chrome 92
+        - Theme: OpenCart Default
+    validations:
+      required: true
