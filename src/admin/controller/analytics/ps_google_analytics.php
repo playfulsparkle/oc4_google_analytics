@@ -114,4 +114,14 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
         $this->response->addHeader('Content-Type: application/json');
         $this->response->setOutput(json_encode($json));
     }
+
+    public function install(): void
+    {
+
+    }
+
+    public function uninstall(): void
+    {
+
+    }
 }
