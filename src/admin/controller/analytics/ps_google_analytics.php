@@ -53,7 +53,7 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
 
         $data['breadcrumbs'][] = [
             'text' => $this->language->get('heading_title'),
-            'href' => $this->url->link('extension/analytics/ps_google_analytics', 'user_token=' . $this->session->data['user_token'] . '&store_id=' . $this->request->get['store_id'], true),
+            'href' => $this->url->link('extension/ps_google_analytics/analytics/ps_google_analytics', 'user_token=' . $this->session->data['user_token'] . '&store_id=' . $this->request->get['store_id'], true),
         ];
 
 
