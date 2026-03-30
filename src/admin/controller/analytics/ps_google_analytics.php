@@ -10,7 +10,7 @@ namespace Opencart\Admin\Controller\Extension\PsGoogleAnalytics\Analytics;
  * @package Opencart\Admin\Controller\Extension\PsGoogleAnalytics\Analytics
  * @subpackage  Google Analytics (GA4)
  * @version     1.0.0
- * @link        https://github.com/playfulsparkle/oc4_google_analytics.git
+ * @link        https://github.com/playfulsparkle/oc4_google_analytics
  * @email       support@playfulsparkle.com
  */
 class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
@@ -21,9 +21,14 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
     const EXTENSION_EMAIL = 'support@playfulsparkle.com';
 
     /**
-     * @var string The documentation URL for the extension.
+     * @var string The URL to the support website.
      */
-    const EXTENSION_DOC = 'https://github.com/playfulsparkle/oc4_google_analytics.git';
+    const SUPPORT_URL = 'https://support.playfulsparkle.com';
+
+    /**
+     * @var string The GitHub repository URL of the extension.
+     */
+    const GITHUB_REPO_URL = 'https://github.com/playfulsparkle/oc4_google_analytics';
 
     /**
      * Displays the main interface for the Google Analytics settings.
@@ -66,7 +71,7 @@ class PsGoogleAnalytics extends \Opencart\System\Engine\Controller
         $data['analytics_ps_google_analytics_debug_mode'] = (bool) $this->config->get('analytics_ps_google_analytics_debug_mode');
         $data['analytics_ps_google_analytics_google_tag_id'] = $this->config->get('analytics_ps_google_analytics_google_tag_id');
 
-        $data['text_contact'] = sprintf($this->language->get('text_contact'), self::EXTENSION_EMAIL, self::EXTENSION_EMAIL, self::EXTENSION_DOC);
+        $data['text_contact'] = sprintf($this->language->get('text_contact'), self::SUPPORT_URL, self::GITHUB_REPO_URL, self::EXTENSION_EMAIL);
 
         $data['header'] = $this->load->controller('common/header');
         $data['column_left'] = $this->load->controller('common/column_left');
